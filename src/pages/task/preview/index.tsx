@@ -64,7 +64,7 @@ export function Component() {
         <div className="p-2 text-center">{'task.file_name'}</div>
         <div className="h-1 flex-1 flex ">
           <div id="wrapper" className="wrapper flex-1 w-1" style={{position:'relative'}}>
-            <PDFViewer pdf={'https://medgo-qwen25v-imageshare.oss-cn-shanghai.aliyuncs.com/docs/abd61c62-3854-4833-8801-3aa71ea5a5d0.pdf?OSSAccessKeyId=LTAI5tPzRzWhzTjf7sGHMKUb&Expires=1751877553&Signature=6pXDTj6XpUukQIRuh1CNbq1JLLI%3D'}/>
+            <PDFViewer pdf={'https://medgo-qwen25v-imageshare.oss-cn-shanghai.aliyuncs.com/test/test/b50746d9-3a6c-4c31-a0d7-3350ecc88ed0.pdf?OSSAccessKeyId=LTAI5tPzRzWhzTjf7sGHMKUb&Expires=1754466491&Signature=719d9hQzOuN4VXhvkw%2B%2F8d%2FhPSI%3D'}/>
           </div>
           <div className="flex-1 w-1">
           <Markdown markdowns={markDownsSplit?.map((item: any) => ({content:item}))} />

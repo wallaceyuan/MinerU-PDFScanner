@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { usePreviewState } from "./state";
 import { PDFViewerSkeleton } from "./PDFViewerSkeleton";
 import { Button } from "@douyinfe/semi-ui";
-import layoutData from './docs/layout.json'
+import layoutData from './test/layout.json'
 
 console.log('layout', layoutData)
 
