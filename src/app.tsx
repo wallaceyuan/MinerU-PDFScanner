@@ -46,13 +46,13 @@ const router = createBrowserRouter([
       {
         path: "/task/preview/:id",
         lazy: () => import("./pages/task/preview"),
-        loader: async ({ params }) => {
-          //params.id 先获得
-          if (!params.id) {
-            return undefined;
-          }
-          return taskService.loadTask(params.id)
-        },
+        // loader: async ({ params }) => {
+        //   //params.id 先获得
+        //   if (!params.id) {
+        //     return undefined;
+        //   }
+        //   return taskService.loadTask(params.id)
+        // },
       },
       {
         path: "/setting",
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-taskService.loadTasks()
+// taskService.loadTasks()
 function App() {
   return <RouterProvider router={router} />;
 }

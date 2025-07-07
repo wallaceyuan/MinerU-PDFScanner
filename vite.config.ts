@@ -2,13 +2,15 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import SemiPlugin from "vite-plugin-semi-theme";
 import { resolve } from 'path';
+import markdown from 'vite-plugin-react-markdown';
+
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  plugins: [react(),
-    SemiPlugin({
-      theme: "@semi-bot/semi-theme-strapi"
-    }),
+  plugins: [react(), markdown()
+    // SemiPlugin({
+    //   theme: "@semi-bot/semi-theme-strapi"
+    // }),
 
   ],
   resolve: {

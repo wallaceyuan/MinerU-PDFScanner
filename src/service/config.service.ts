@@ -29,13 +29,15 @@ export class ConfigService {
     store: SettingsStore<Config>
 
     constructor() {
-        this.store = new SettingsStore<Config>('config')
+      this.store = new SettingsStore<Config>('config')
     }
 
 
     async get() {
         const appData = await appDataDir()
         const data = await this.store.get()
+
+        console.log('datadatadata', data)
         return Object.assign({
             fileUrl: "http://127.0.0.1:8080/file",
             uploadUrl: "http://127.0.0.1:8080",

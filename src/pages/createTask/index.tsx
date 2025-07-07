@@ -14,6 +14,9 @@ export function Component() {
   const configReq = useRequest(() => configService.get(), {
     cacheKey: "CONFIG",
   });
+
+
+  console.log('configReq', configReq)
   return (
     <Page>
       <div className="w-ful h-full flex  items-center flex-col justify-center gap-5">
